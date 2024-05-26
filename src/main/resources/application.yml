@@ -1,0 +1,61 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hrm
+    username: hrm
+    password: W923812J
+    driver-class-name: org.postgresql.Driver
+      # security:
+      #  oauth2:
+    #   resourceserver:
+    #    jwt:
+    #     issuer-uri: https://sts.windows.net/ebf9d9bf-726c-46a4-be84-fdeabb3bcf58/
+    #     jwk-set-uri: https://login.windows.net/common/discovery/keys
+  jpa:
+    show-sql: false
+    hibernate:
+      dialect: org.Hibernate.dialect.H2Dialect
+      ddl-auto: update
+
+#  mail:
+#    host: cpanel16.rackforest.com
+#    port: 587
+#    username: hrm@evonit.eu
+#    password: IJfj^1WXQ7TW
+#    properties:
+#      mail:
+#        transport:
+#          protocol: smtp
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+
+
+#  thymeleaf:
+#    enabled: false
+#    check-template-location: false
+
+#jwt:
+#  private:
+#    key: classpath:app.key
+#  public:
+#    key: classpath:app.pub
+
+hibernate:
+  dynamic_update: true
+#
+#hrm:
+#  audit-log:
+#    create: false
+#  mail:
+#    sender-address: hrm-no-reply@evonit.hu
+#  cors:
+#    mapping-path: "/api/**"
+#    max-age: 3600
+#    allowed-methods: "*"
+#    allowed-origins:
+#      - https://hrm.evonit.hu
+#      - http://localhost:8080
+#      - http://localhost:4200
+#    allowed-credentials: true
+
